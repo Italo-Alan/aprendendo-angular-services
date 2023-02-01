@@ -1,0 +1,11 @@
+<h4>Lista de cursos</h4>
+
+<!-- Para pegar o valor aqui, precisamos declarar uma variável local -->
+<input type="text" #cursoInput>
+<button (click)="onAddCurso(cursoInput.value)">Adicionar curso</button>
+
+<ul>
+  <li *ngFor="let curso of cursos">
+    {{ curso }}
+  </li>
+</ul>
